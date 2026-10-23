@@ -256,15 +256,50 @@ function render() {
     </article>`;
   }).join("");
 }
-fetch("scripts.json", { cache: "no-store" })
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d => { D = d; render(); if (api) bar.hidden = false; })
-  .catch(() => { document.getElementById("scripts").innerHTML = '<p class="load-error">The scripts could not be loaded. Reload the page to try again.</p>'; });
-
 /* ---------- editing ---------- */
 const bar = document.getElementById("toolbar");
 const status = document.getElementById("save-status");
 let api = null;
+
+/* On GitHub Pages, edits are committed back to scripts.json in the repo with the editor's own token. */
+const GH = (() => {
+  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  if (!m || !repo) return null;
+  const url = `https://api.github.com/repos/${m[1]}/${repo}/contents/scripts.json`;
+  let sha = null;
+  const token = () => { try { return localStorage.getItem("gh-token") || ""; } catch (e) { return ""; } };
+  const setToken = t => { try { t ? localStorage.setItem("gh-token", t) : localStorage.removeItem("gh-token"); } catch (e) {} };
+  async function req(method, body) {
+    const r = await fetch(url, { method, cache: "no-store", keepalive: method === "PUT",
+      headers: { Authorization: "Bearer " + token(), Accept: "application/vnd.github+json" }, body: body && JSON.stringify(body) });
+    if (r.ok) return r.json();
+    const code = r.status === 401 ? "bad_token" : r.status === 403 || r.status === 404 ? "no_access"
+      : r.status === 409 || r.status === 422 ? "stale" : r.status === 429 ? "rate_limited" : "error";
+    throw Object.assign(new Error(r.status), { code });
+  }
+  async function load() {
+    const j = await req("GET");
+    sha = j.sha;
+    const bin = atob(j.content.replace(/\n/g, ""));
+    return JSON.parse(new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))));
+  }
+  async function publish(files) {
+    let bin = "";
+    new TextEncoder().encode(files["scripts.json"].content).forEach(b => bin += String.fromCharCode(b));
+    const put = () => req("PUT", { message: "Edit scripts from the live site", content: btoa(bin), sha });
+    try { sha = (await put()).content.sha; }
+    catch (e) { if (e.code !== "stale") throw e; await load(); sha = (await put()).content.sha; }
+  }
+  return { token, setToken, load, publish };
+})();
+
+async function loadData() {
+  if (api === GH && GH.token()) { try { return await GH.load(); } catch (e) {} }
+  const r = await fetch("scripts.json", { cache: "no-store" });
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
 
 function setEditable(on) {
   document.body.classList.toggle("editing", on);
@@ -335,7 +370,11 @@ async function save() {
   } catch (e) {
     const code = e && e.code;
     if (code === "conflict") setStatus("Someone else saved a newer version. Reloading to it.");
-    else if (["not_writer", "not_granted", "not_declared", "consent_required", "capability_disabled", "capability_removed", "read_only_path"].includes(code)) {
+    else if (code === "bad_token" || code === "no_access") {
+      readOnly = true; dirty = true;
+      GH.setToken("");
+      setStatus("GitHub didn't accept the token, so edits aren't saved yet. Click Done editing, then Edit text to enter a new one.");
+    } else if (["not_writer", "not_granted", "not_declared", "consent_required", "capability_disabled", "capability_removed", "read_only_path"].includes(code)) {
       readOnly = true;
       setStatus("Saving isn't available in this view, so edits here won't be kept.");
     } else {
@@ -356,7 +395,20 @@ document.addEventListener("focusout", e => { if (dirty && e.target.closest && e.
 document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") save(); });
 window.addEventListener("beforeunload", e => { if (dirty || saving) { save(); e.preventDefault(); e.returnValue = ""; } });
 
-document.getElementById("btn-edit").addEventListener("click", () => { setEditable(true); setStatus("Click any script text to edit it. Changes save automatically."); });
+document.getElementById("btn-edit").addEventListener("click", async () => {
+  if (api === GH && !GH.token()) {
+    const t = prompt("Paste your GitHub token to edit. It is kept in this browser only.\n\nCreate one at github.com/settings/personal-access-tokens/new with access to only the video-scripts repository and Contents set to Read and write.");
+    if (!t || !t.trim()) return;
+    GH.setToken(t.trim());
+    setStatus("Checking token…");
+    try { const d = await GH.load(); if (!dirty) { D = d; render(); } }
+    catch (e) { GH.setToken(""); setStatus(e.code === "bad_token" ? "GitHub didn't accept that token." : "Couldn't reach GitHub. Try again."); return; }
+    readOnly = false;
+    if (dirty) save();
+  }
+  setEditable(true);
+  setStatus("Click any script text to edit it. Changes save automatically.");
+});
 document.getElementById("btn-save").addEventListener("click", async () => {
   await save();
   setEditable(false);
@@ -366,7 +418,9 @@ document.getElementById("btn-save").addEventListener("click", async () => {
 
 (async () => {
   try { api = window.claude && await window.claude.use("artifact"); } catch (e) { api = null; }
-  if (api && D) bar.hidden = false;
+  if (!api && GH) api = GH;
+  try { D = await loadData(); render(); if (api) bar.hidden = false; }
+  catch (e) { document.getElementById("scripts").innerHTML = '<p class="load-error">The scripts could not be loaded. Reload the page to try again.</p>'; }
 })();
 
 document.getElementById("scripts").addEventListener("click", e => {
