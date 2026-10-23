@@ -22,15 +22,15 @@
   {
    "t": "Your KOL campaign got views, not users",
    "tag": "KOLs",
-   "hook": "You paid an influencer, got two hundred thousand impressions and almost no new users. Here's what went wrong.",
+   "hook": "You paid a KOL or influencer, got two hundred thousand impressions and almost no new users. <br><br>Here's what went wrong.",
    "hookOst": "200K VIEWS. 0 USERS.",
    "body": [
-    "First, you picked by follower count. Big audiences are often the wrong audience. You need people who look like your customers and actually engage.",
-    "Second, there was no reason to act. A post that says \"check this out\" creates awareness, not users. Give one clear offer and one clear next step.",
-    "Third, you couldn't measure it. Without a unique link or code per creator, you don't know who drove results, so you can't double down on what worked."
+    "The audience those influencers had didn't match the audience you wanted to reach. <br><br>Before confirming to work with any influencer, check that their followers are people who need your services or product.<br><br>If you are trying to narrow down an initial KOL or influencer list,  look at the overlap between your audience and their total audience across all your options.",
+    "Second, there was no reason to act. <br><br>A post that says \"check this out\" creates awareness, not users. Give one clear offer and one clear next step.",
+    "Third, you couldn't measure conversions. <br><br>Without a unique link, code or embedded pixel per creator, you don't know who drove results, so you can't double down on what worked."
    ],
    "bodyOst": "FIT · OFFER · TRACKING",
-   "reward": "Before your next campaign: choose creators by audience fit and engagement, give every post one offer, and track every creator separately. Then you're buying customers, not impressions.",
+   "reward": "Want to see what this looks like in practice for you? Get your free 90-day growth plan today",
    "alts": [
     "Most KOL campaigns are paying for impressions, not customers.",
     "Before you pay another influencer, check these three things."
@@ -40,11 +40,11 @@
   {
    "t": "The cold DM structure that gets replies",
    "tag": "DM outreach",
-   "hook": "Most cold DMs get ignored for one reason: they're about the sender. Here's the structure that actually gets replies.",
+   "hook": "Most cold DMs get ignored because they are about you, not them.<br><br>Here's the structure that actually gets replies.",
    "hookOst": "WHY YOUR DMs GET IGNORED",
    "body": [
-    "Line one: why them. Reference something specific, like a post they made or a product they launched. That proves it isn't a blast.",
-    "Line two: one relevant outcome. Not your whole service. One result that matters to someone in their position.",
+    "For the first line, say something like <br><br>\"Hey [Jane], saw you mentioned working on a product launch for your AI startup.  Here is a video on how I tie social engagements directly to your app sign-ups.<br><br>[send another X post link]",
+    "For the second message:<br><br>\"Hey [Jane], saw you mentioned working on a product launch for your AI startup.  Here is a video on how I tie social engagements directly to your app sign-ups.<br><br>[send another X post link]\"",
     "Line three: an easy question. Not a calendar link. Something they can answer in five seconds, like \"Is growing this a focus for you this quarter?\"",
     "Keep it short. No decks, no links, no paragraphs in the first message."
    ],
