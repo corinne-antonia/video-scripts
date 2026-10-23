@@ -1,0 +1,228 @@
+{
+ "lede": "Educational one-minute videos for Web3 founders and growth leads. Each one teaches a single fix around conversion, X outreach, KOLs, reply strategy and sales calls. They are the problems our service solves, taught without pitching it.",
+ "scripts": [
+  {
+   "t": "Why your leads aren't converting",
+   "tag": "Conversion",
+   "hook": "Getting leads but not customers? The problem usually isn't your product. It's one of three things.",
+   "hookOst": "LEADS ≠ CUSTOMERS",
+   "body": [
+    "One. You're talking to the wrong people. <br><br>Who you are contacting does not need the service you offer, or the product you built.<br><br>But who does? <br><br>Everything hinges on this question. <br><br>Who is your ideal customer, or \"ICP\"?<br><br>To talk to the people most likely to need your service or product, we need to make a list of assumptions.<br><br>This can be who they are their interests, their motivations, their needs &amp; wants...or<br>where we can find them, social platforms they use, profiles they follow, and more.<br><br>A lead who doesn't match these assumptions will never convert, no matter how good your follow-up is.",
+    "Two. You're too slow. <br><br>A lead is warmest the minute they raise their hand. If your team replies the next day, someone else already did.<br><br>This is why tracking \"indicators\" is so important. An indicator is basically identifying people we believe to match our assumptions.<br><br>Let's say you are a banking solution for digital nomads or frequent travellers.<br><br>Every time someone follows your competition, being other cross-border banking solutions, that would be an example of an indicator that they are showing interest in this niche.",
+    "Three. You stop after one message. <br><br>Most deals take several conversations.<br><br>Let's say you took the time to curate your ICP list, determined that your best fit customers are on X, write customized DMs to each person, and get no responses.<br><br>Those leads are not dead, they just didn't engage.<br><br>Most of your conversion issues would be solved by ensuring you have a follow-up sequence and a convincing pitch.<br><br>Sending a message thats just \"following up\" or \"checking in\" does not count. You need to be adding value, not creating work."
+   ],
+   "bodyOst": "1 WRONG PEOPLE · 2 TOO SLOW · 3 ONE TOUCH",
+   "reward": "So fix the list, fix the speed, and build a real follow-up sequence.<br><br>Want to learn how this can apply to you? Get your free 90-day growth plan today.",
+   "alts": [
+    "Your lead problem is probably a follow-up problem.",
+    "More leads won't fix a funnel that doesn't convert."
+   ],
+   "verify": ""
+  },
+  {
+   "t": "Your KOL campaign got views, not users",
+   "tag": "KOLs",
+   "hook": "You paid an influencer, got two hundred thousand impressions and almost no new users. Here's what went wrong.",
+   "hookOst": "200K VIEWS. 0 USERS.",
+   "body": [
+    "First, you picked by follower count. Big audiences are often the wrong audience. You need people who look like your customers and actually engage.",
+    "Second, there was no reason to act. A post that says \"check this out\" creates awareness, not users. Give one clear offer and one clear next step.",
+    "Third, you couldn't measure it. Without a unique link or code per creator, you don't know who drove results, so you can't double down on what worked."
+   ],
+   "bodyOst": "FIT · OFFER · TRACKING",
+   "reward": "Before your next campaign: choose creators by audience fit and engagement, give every post one offer, and track every creator separately. Then you're buying customers, not impressions.",
+   "alts": [
+    "Most KOL campaigns are paying for impressions, not customers.",
+    "Before you pay another influencer, check these three things."
+   ],
+   "verify": ""
+  },
+  {
+   "t": "The cold DM structure that gets replies",
+   "tag": "DM outreach",
+   "hook": "Most cold DMs get ignored for one reason: they're about the sender. Here's the structure that actually gets replies.",
+   "hookOst": "WHY YOUR DMs GET IGNORED",
+   "body": [
+    "Line one: why them. Reference something specific, like a post they made or a product they launched. That proves it isn't a blast.",
+    "Line two: one relevant outcome. Not your whole service. One result that matters to someone in their position.",
+    "Line three: an easy question. Not a calendar link. Something they can answer in five seconds, like \"Is growing this a focus for you this quarter?\"",
+    "Keep it short. No decks, no links, no paragraphs in the first message."
+   ],
+   "bodyOst": "WHY THEM → ONE OUTCOME → EASY QUESTION",
+   "reward": "Specific, short, and easy to answer. On one of our campaigns this structure got about a one-in-four reply rate. Use it on your next ten DMs and compare.",
+   "verify": "\"One-in-four reply rate\" is the Sai benchmark (25%) from the call. Confirm the number and that you can reference it before filming.",
+   "alts": [
+    "Your cold DM is too long. Here's the three-line version.",
+    "Stop sending calendar links in your first DM."
+   ]
+  },
+  {
+   "t": "Brand or customers? Pick one per campaign",
+   "tag": "Strategy",
+   "hook": "Before you spend another dollar marketing on X, answer one question: is this campaign for brand, or for customers?",
+   "hookOst": "BRAND OR CUSTOMERS?",
+   "body": [
+    "Brand campaigns are about attention and trust. You measure reach, community growth, and whether people in your space know your name. Your marketing team and thought leadership drive it.",
+    "Acquisition campaigns are about users. You measure signups, deposits, and what each customer costs. They need a clear call to action, an offer, and someone following up on every lead.",
+    "When you mix the two, you get content that's too soft to convert and too salesy to build trust. And you can't tell if it worked."
+   ],
+   "bodyOst": "BRAND = REACH · ACQUISITION = CUSTOMERS",
+   "reward": "So label every campaign with one goal and one number before it launches. That single decision tells you who runs it, what to post, and how to judge it.",
+   "alts": [
+    "Most marketing fails because nobody decided what it was for.",
+    "Your X strategy is trying to do two jobs at once."
+   ],
+   "verify": ""
+  },
+  {
+   "t": "You don't know your cost per customer",
+   "tag": "Analytics",
+   "hook": "Ask most Web3 founders what it costs to acquire one user, and you'll get a guess.",
+   "hookOst": "WHAT DOES ONE USER COST YOU?",
+   "body": [
+    "Here's why. Your on-chain data shows what users do. Your CRM shows how you reached them. Nothing connects the two.",
+    "So you can't see which channel brought your best users, the ones who actually trade, deposit, or stay.",
+    "The fix is simple. Give every channel, creator, and campaign its own link or referral code. Track each user from first touch to first on-chain action. Review it every week."
+   ],
+   "bodyOst": "FIRST TOUCH → FIRST ON-CHAIN ACTION",
+   "reward": "Once you know what a real user costs from each channel, your budget stops being a debate. It becomes math. Spend more where it's cheap, cut where it isn't.",
+   "alts": [
+    "If you can't connect on-chain data to your pipeline, you're guessing.",
+    "Your best channel might be the one you're about to cut."
+   ],
+   "verify": ""
+  },
+  {
+   "t": "The reply strategy on X",
+   "tag": "Reply strategy",
+   "hook": "The most underrated growth channel on X isn't posting. It's replying.",
+   "hookOst": "STOP POSTING. START REPLYING.",
+   "body": [
+    "The biggest accounts in your niche already have your customers' attention. A sharp reply under their post puts you in front of that audience, with no ad spend.",
+    "Here's how to do it. Pick twenty to thirty accounts your ideal customers follow. Reply early, while the post is still climbing.",
+    "And add something real: a data point, a contrarian take, a lesson from experience. \"Great post\" does nothing.",
+    "Then do it every day. Consistency is what turns replies into recognition."
+   ],
+   "bodyOst": "20–30 ACCOUNTS · REPLY EARLY · ADD VALUE · DAILY",
+   "reward": "Do this for a month and something changes. When you send a DM, people already know your name. That's when outreach gets easy.",
+   "alts": [
+    "You don't need more followers. You need better replies.",
+    "Here's how to borrow a big account's audience for free."
+   ],
+   "verify": ""
+  },
+  {
+   "t": "How to choose the right KOLs",
+   "tag": "KOLs",
+   "hook": "Follower count is the worst way to choose an influencer. Here's what to look at instead.",
+   "hookOst": "FOLLOWERS ≠ INFLUENCE",
+   "body": [
+    "First, engagement. Open their last ten posts. Are real people replying with real questions, or is it bots and emojis?",
+    "Second, audience fit. Click into who follows and engages with them. Do those people look like your customers?",
+    "Third, track record. Have they driven signups or volume for projects like yours? Ask for results, not a rate card.",
+    "And start small. One paid test post before you sign a package."
+   ],
+   "bodyOst": "ENGAGEMENT · FIT · TRACK RECORD · TEST FIRST",
+   "reward": "A creator with twenty thousand of the right followers will beat one with five hundred thousand of the wrong ones. Pay for proof, then scale what works.",
+   "alts": [
+    "Three checks before you pay any crypto influencer.",
+    "Why the smaller KOL usually wins."
+   ],
+   "verify": ""
+  },
+  {
+   "t": "Don't scale what doesn't convert",
+   "tag": "Strategy",
+   "hook": "If your product doesn't convert with a hundred users, a big marketing push won't save it.",
+   "hookOst": "TRAFFIC AMPLIFIES WHAT'S THERE",
+   "body": [
+    "Here's the order we recommend.",
+    "Phase one: find where people drop off. Look at every step from first visit to first action and find the biggest leak.",
+    "Phase two: talk to people directly. Outreach and one-on-one conversations show you the real objections faster than any dashboard.",
+    "Phase three: only once a known share of people convert do you pour in influencers and paid traffic."
+   ],
+   "bodyOst": "1 FIND THE LEAK · 2 TALK TO USERS · 3 THEN SCALE",
+   "reward": "Traffic makes whatever's already true louder. Make sure it's good news before you turn up the volume.",
+   "alts": [
+    "The most expensive mistake in growth: scaling too early.",
+    "Fix conversion before you buy attention."
+   ],
+   "verify": ""
+  },
+  {
+   "t": "Your first sales call: stop talking",
+   "tag": "Sales calls",
+   "hook": "If you're doing most of the talking on a sales call, you're losing the deal.",
+   "hookOst": "WHO'S TALKING ON YOUR CALLS?",
+   "body": [
+    "Open by framing the call. Tell them you've prepared a few questions and what they'll get by the end.",
+    "Then ask them to describe their ideal customer in their own words. Ask what they've already tried, and what's actually worked.",
+    "Find out what they want most: brand awareness, or more customers. That tells you which problem to solve.",
+    "Only then show a demo. Five minutes, focused on the outcome they just described."
+   ],
+   "bodyOst": "FRAME · ASK · LISTEN · SHORT DEMO",
+   "reward": "And before you hang up, book the next meeting while you're both still on the call. The best calls end with them explaining their problem better than you could.",
+   "alts": [
+    "The best salespeople barely talk on the first call.",
+    "Your demo is too long. Here's the five-minute version."
+   ],
+   "verify": ""
+  },
+  {
+   "t": "One message for everyone reaches no one",
+   "tag": "Persona targeting",
+   "hook": "If you're sending the same message to a trader, a founder, and a fund, you're losing all three.",
+   "hookOst": "ONE MESSAGE ≠ EVERYONE",
+   "body": [
+    "Each persona cares about something different. A trader cares about fees, execution, and rewards. A founder cares about users and distribution. A fund cares about traction.",
+    "So start by naming your two or three core personas. For each one, write down the problem they feel most.",
+    "Then write a separate opener for each, using their words, not yours. Track replies by persona so you can see which group responds."
+   ],
+   "bodyOst": "TRADER · FOUNDER · FUND",
+   "reward": "Same product, three messages. Your reply rate goes up because every person reads something that sounds like it was written for them, because it was.",
+   "alts": [
+    "Who is your outreach actually written for?",
+    "Why generic outreach gets generic results."
+   ],
+   "verify": ""
+  },
+  {
+   "t": "Seven ways to get customers. Pick one.",
+   "tag": "Channels",
+   "hook": "There are seven main ways to get customers. Most early teams try all seven and do none of them well.",
+   "hookOst": "7 CHANNELS. PICK 1.",
+   "body": [
+    "Here they are: direct outreach, partnerships, influencers and creator content, paid ads, search and AI search, events, and outsourced business development.",
+    "If you're early and budget is tight, start with direct outreach and partnerships. They're cheap, and every conversation teaches you something.",
+    "Once you know which message converts, add one amplifier, like creators or ads, to push that message further."
+   ],
+   "bodyOst": "OUTREACH · PARTNERS · CREATORS · ADS · SEARCH · EVENTS · BD",
+   "reward": "One channel done well beats seven done halfway. Get one working, measure it, then add the next.",
+   "alts": [
+    "Your growth problem might be doing too much.",
+    "Where should an early-stage team find its first customers?"
+   ],
+   "verify": ""
+  },
+  {
+   "t": "Cold outreach on X without getting flagged",
+   "tag": "DM outreach",
+   "hook": "Cold outreach on X can get your account restricted. Here's how to do it safely.",
+   "hookOst": "DON'T GET FLAGGED",
+   "body": [
+    "First, warm up the account. Complete profile, real posting history, real engagement before you send a single DM.",
+    "Second, ramp slowly. Start with a small number of messages a day and increase gradually. Sudden spikes are what trip the filters.",
+    "Third, personalize. Identical messages get flagged, and irrelevant ones get reported.",
+    "Fourth, watch your numbers. If replies drop or reports rise, slow down and fix the targeting."
+   ],
+   "bodyOst": "WARM UP · RAMP SLOWLY · PERSONALIZE · MONITOR",
+   "reward": "Safe outreach is slower and more targeted, and that's exactly why it converts better. We've run client accounts for three months straight without a single flag.",
+   "verify": "\"Three months without a flag\" is from the call. Confirm it's still true for every client account before saying it on camera.",
+   "alts": [
+    "The fastest way to lose your X account: bad outreach.",
+    "How to scale DMs on X without getting restricted."
+   ]
+  }
+ ],
+ "format": "html"
+}
